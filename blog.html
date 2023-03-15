@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Quiz Hero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              common: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white font-common">
+    <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+      <nav class="flex justify-between items-center w-9/12 mx-auto">
+        <div class="text-zinc-800 font-bold uppercase">
+          <h1 class="text-2xl"><span class="text-green-700">BLOG</span></h1>
+        </div>
+        <button
+          class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
+        >
+          <a href="index.html">Quiz</a>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <div class="border-0 rounded-lg bg-red-500 md:mx-80 text-lg p-4 mt-4">
+        <p>
+          Question 01 : What is DOM and what is the purpose of DOM? <br />
+          Ans: <br />
+          DOM stands for Document Object Model. It is a programming interface
+          that helps us to do many things to the elements from the document. The
+          main purpose of the DOM is to select the nodes of the html element to
+          change them as the requirements using getElementById() querySelector()
+          querySelectorAll() etc.
+        </p>
+      </div>
+      <div class="border-0 rounded-lg bg-amber-400 md:mx-80 text-lg p-4 mt-4">
+        <p>
+          Question 02 : How will you select HTML elements using DOM? Name the
+          DOM methods. <br />
+          Ans: <br />
+          To select HTML element using DOM, we can use various method. Like for
+          example, to select the id we could use getElementById(), to select the
+          class we could use getElementsByClassName() etc. Here is an exaple of
+          hoe to select this method:<br />
+          const myElement = document.getElementById("myId"); <br />
+          There is also many more methods. Example_ querySelector(),
+          getElementsByTagName() etc.
+        </p>
+      </div>
+      <div class="border-0 rounded-lg bg-lime-400 md:mx-80 text-lg p-4 mt-4">
+        <p>
+          Question 03 : What is event bubble? <br />
+          Ans: <br />
+          Suppose we have a button element inside a div element, and we click on
+          the button, the click event will first be triggered on the button
+          element, and then it will bubble up and trigger the same event on the
+          div element that contains the button. If there are more parent
+          elements, the event will continue to bubble up until it reaches the
+          root element of the document. This event is called the bubble event.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
