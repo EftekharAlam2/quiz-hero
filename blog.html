@@ -91,14 +91,22 @@
       </div>
       <div class="border-0 rounded-lg bg-lime-400 md:mx-80 text-lg p-4 mt-4">
         <p>
-          Question 03 : What is event bubble? <br />
+          Question 03 : What is event loop and how does it work? <br />
           Ans: <br />
-          Suppose we have a button element inside a div element, and we click on
-          the button, the click event will first be triggered on the button
-          element, and then it will bubble up and trigger the same event on the
-          div element that contains the button. If there are more parent
-          elements, the event will continue to bubble up until it reaches the
-          root element of the document. This event is called the bubble event.
+          An event loop is a programming construct that allows programs to
+          handle multiple events or requests simultaneously in a single thread
+          of execution. The basic idea of an event loop is to have a program
+          that listens for events or requests and responds to them as they come
+          in. <br />
+          <br />
+          The event loop typically runs in a continuous loop, constantly
+          checking for new events or requests. When an event or request is
+          detected, the event loop calls the appropriate function or handler to
+          process the event. This can be a callback function, a coroutine, or
+          some other type of function that is designed to handle the specific
+          type of event or request. Once the event has been processed, the event
+          loop returns to its loop and continues checking for new events. That's
+          how the event loop works.
         </p>
       </div>
     </main>
