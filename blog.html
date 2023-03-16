@@ -45,7 +45,7 @@
         </button>
       </nav>
     </header>
-    <main>
+    <main class="mb-4">
       <div class="border-0 rounded-lg bg-red-500 md:mx-80 text-lg p-4 mt-4">
         <p>
           Question 01 : What is the difference between map, filter, forEach and
@@ -107,6 +107,30 @@
           type of event or request. Once the event has been processed, the event
           loop returns to its loop and continues checking for new events. That's
           how the event loop works.
+        </p>
+      </div>
+
+      <div class="border-0 rounded-lg bg-teal-500 md:mx-80 text-lg p-4 mt-5">
+        <p>
+          About quizTimer() function in noChange js file.
+          <br />
+          <br />
+          Over here, first the quizTimer() function takes a boolean parameter
+          known as dismiss. If the dismiss parameter is true then the function
+          clears the interval using clearInterval method. This is used to stop
+          the countdown time once the quiz is submitted or canceled.
+          <br />
+          <br />
+          If dismiss is false then the function sets an interval using
+          setInterval method. Over here, first we select the innerHTML of an
+          HTMl element with id count. Then we convert the count value to minute
+          and seconds. Then show it to the innerHTML.
+          <br />
+          <br />
+          There is also another conditions. If the count increase more than 60.
+          Then checking it's even and odd value the color will be changed.
+          <br />
+          Mainly this function is used to update the countdown on the HTML page.
         </p>
       </div>
     </main>
