@@ -133,6 +133,29 @@
           Mainly this function is used to update the countdown on the HTML page.
         </p>
       </div>
+      <div class="border-0 rounded-lg bg-sky-400 md:mx-80 text-lg p-4 mt-5">
+        <p>
+          About chooseQuiz() function in noChange js file.
+          <br />
+          <br />
+          Fist of all, the function chooseQuiz() takes two parameter known as
+          index and givenAns. Then The function checks if an object with an id
+          property equal to the id property of quizData[index].id using find()
+          method in an array called answers. <br />
+          <br />
+          If it's exist then using for..of loop and then using splice() method
+          to replace that object with a new object that has the same properties
+          if it's find the object with the same id as the current quiz.
+          <br />
+          <br />
+          And if it's doesn't exist then this is the first attempt for this
+          quiz. So, the function adds a new object to the array. <br />
+          Then the functions called displayAnswers() function to passing the
+          answers array as an argument. <br />
+          Mainly this functions is used for to know the attempted quiz and pass
+          the array to displayAnswers() function.
+        </p>
+      </div>
     </main>
   </body>
 </html>
